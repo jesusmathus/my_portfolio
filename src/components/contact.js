@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import swal from 'sweetalert';
 
 class Contact extends Component {
   constructor(props) {
@@ -64,9 +65,17 @@ class Contact extends Component {
     }).then((response) => {
       if(response.data.msg === 'success') {
         this.resetForm()
-        alert("Message sent!");
+        swal({
+          title: "Message sent!",
+          text: "Thank you for reaching out, I will get back to you soon.",
+          icon: "success"
+        });
       } else if(response.data.msg === 'fail') {
-        alert("Message failed to send.");
+        swal({
+          title: "Message failed to send.",
+          text: "It seems like something went wrong, please try again.",
+          icon: "error"
+        });
       }
     })
   }

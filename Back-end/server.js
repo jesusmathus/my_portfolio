@@ -9,13 +9,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.get('/api', (req, res) => {
-  const name = req.query.name || 'World';
-  res.setHeader('Content-Type', 'application/json');
-  res.send(JSON.stringify({ greeting: `Hello ${name}!` }));
-});
-
 app.use('/', emailSender)
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('../build'));
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+  });
+}
 
 app.listen(8000, () =>
   console.log('Express server running on localhost: 8000')

@@ -136,6 +136,10 @@
   background-color: white;
 }
 
+a {
+  outline: 0 !important;
+}
+
 /* Animation */
 
 .parallax > use {
