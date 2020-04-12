@@ -46,7 +46,7 @@ class Resume extends Component {
               degree="Master's of Computer Science"
               city="Cambridge, MA"
               time="June 2017 - June 2018"
-              blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              blurb="I studied computer science and took classes like computer systems security, probability and random variables, and entrepreneurship in engineering to name a few."
             />
             {/* MIT Bachelor's Degree */}
             <Education
@@ -55,7 +55,7 @@ class Resume extends Component {
               degree="Bachelor of Computer Science"
               city="Cambridge, MA"
               time="September 2013 - June 2017"
-              blurb="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+              blurb="I studied computer science and took classes like advanced algorithms, computer system engineering, and user interface design and implementation to name a few."
             />
 
 

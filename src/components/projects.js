@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import swal from 'sweetalert';
 
 class Projects extends Component {
   constructor(props) {
@@ -34,6 +35,14 @@ class Projects extends Component {
     window.removeEventListener("resize", this.checkSize);
   }
 
+  tbdPopUp() {
+    swal({
+      title: "Work in progress.",
+      text: "Sorry this feature does not work yet.",
+      icon: "info"
+    });
+  }
+
   toggleCategories() {
     if(this.state.activeTab === 0) {
       return(
@@ -44,14 +53,14 @@ class Projects extends Component {
               React Project #1
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -61,14 +70,14 @@ class Projects extends Component {
               React Project #2
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -78,14 +87,14 @@ class Projects extends Component {
               React Project #3
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -95,14 +104,14 @@ class Projects extends Component {
               React Project #4
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -112,14 +121,14 @@ class Projects extends Component {
               React Project #5
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
         </div>
@@ -133,14 +142,14 @@ class Projects extends Component {
               Java Project #1
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -150,14 +159,14 @@ class Projects extends Component {
               Java Project #2
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -167,14 +176,14 @@ class Projects extends Component {
               Java Project #3
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -184,14 +193,14 @@ class Projects extends Component {
               Java Project #4
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -201,14 +210,14 @@ class Projects extends Component {
               Java Project #5
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
         </div>
@@ -222,14 +231,14 @@ class Projects extends Component {
               Golang Project #1
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -239,14 +248,14 @@ class Projects extends Component {
               Golang Project #2
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -256,14 +265,14 @@ class Projects extends Component {
               Golang Project #3
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -273,14 +282,14 @@ class Projects extends Component {
               Golang Project #4
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -290,14 +299,14 @@ class Projects extends Component {
               Golang Project #5
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
         </div>
@@ -311,14 +320,14 @@ class Projects extends Component {
               Python Project #1
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -328,14 +337,14 @@ class Projects extends Component {
               Python Project #2
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -345,14 +354,14 @@ class Projects extends Component {
               Python Project #3
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -362,14 +371,14 @@ class Projects extends Component {
               Python Project #4
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
 
@@ -379,14 +388,14 @@ class Projects extends Component {
               Python Project #5
             </CardTitle>
             <CardText>
-              There should be text here that describes this project at a high-level to provide the reader with context as to what it does.
+              This portion of the site is still a work in progress and projects will be added soon!
             </CardText>
             <CardActions border>
-              <Button colored>Github</Button>
-              <Button colored>Live Demo</Button>
+              <Button colored onClick={this.tbdPopUp}>Github</Button>
+              <Button colored onClick={this.tbdPopUp}>Live Demo</Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share"></IconButton>
+              <IconButton name="share" onClick={this.tbdPopUp}></IconButton>
             </CardMenu>
           </Card>
         </div>

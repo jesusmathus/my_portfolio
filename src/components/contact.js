@@ -77,6 +77,20 @@ class Contact extends Component {
           icon: "error"
         });
       }
+    }).catch(error => {
+      if (this.state.firstName === '' || this.state.lastName === '' || this.state.email === '' || this.state.subject === '' || this.state.message === '') {
+        swal({
+          title: "Message failed to send.",
+          text: "Please make sure to populate all the contact form fields.",
+          icon: "error"
+        });
+      } else {
+        swal({
+          title: "Message failed to send.",
+          text: "It seems like something went wrong, please try again.",
+          icon: "error"
+        });
+      }
     })
   }
 

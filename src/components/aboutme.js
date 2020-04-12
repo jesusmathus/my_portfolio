@@ -37,11 +37,9 @@ class About extends Component {
             <h2>Jesús Mathus</h2>
             <img src="/Jesus_Mathus_Headshot.jpg" alt="headshot" style={{height: '300px', borderRadius: '50%', border: '1px solid #333333'}}/>
             <p style={{width: '85%', margin: 'auto', paddingTop: '1em'}}>Hi, my name is Jesús. I graduated from MIT with a bachelor's and master's degree in
-            computer science. I now work full time as a cybersecurity consultant for McKinsey out of their New York office. I have worked in and traveled to a
-            number of different countries, including Taiwan, Peru, Greece, Japan, Colombia, Ecuador, Singapore, South Korea, Indonesia, and Mexico to name a few.
-            I've worked on projects in a number of different languages, including Python, Java, Golang, React, and Node.js. I have a passion for physical fitness
-            that developed throughout my career as a rower in high school and college. Thanks for taking the time to get to know more about me and feel free to
-            continue looking through the site to learn more about my professional background or to contact me if you'd like to get in touch.</p>
+            computer science. I now work full time as a cybersecurity consultant for McKinsey out of their New York office. I'm a full stack developer and
+            I've worked on projects in a number of different languages, including Python, Java, Golang, Node.js, Express.js, and React. Please feel free to continue
+            looking through the site to learn more about my professional background or to contact me if you'd like to get in touch.</p>
           </Cell>
           <Cell col={4}>
             <h2>Learn More</h2>
