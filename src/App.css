@@ -524,7 +524,7 @@ a {
 .contact-form .square-button {
   background-color: rgba(255, 255, 255, 0.8);
   color: #333333;
-  font-size: 26px;
+  font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
@@ -535,10 +535,11 @@ a {
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 0 60px;
+  margin: 0 60px;
   height: 8vh;
   border: none;
-  width: 40%;
+  width: 30%;
+  min-width: 120px;
 }
 .contact-form .square-button:hover, .contact-form .square-button:focus {
   background-color: white;
@@ -560,4 +561,10 @@ a {
 
 .contact-wrap {
   padding: 15px;
+}
+
+#g-recaptcha {
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }

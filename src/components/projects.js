@@ -38,7 +38,7 @@ class Projects extends Component {
   tbdPopUp() {
     swal({
       title: "Work in progress.",
-      text: "Sorry this feature does not work yet.",
+      text: "Sorry, this feature does not work yet.",
       icon: "info"
     });
   }
